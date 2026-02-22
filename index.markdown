@@ -30,10 +30,10 @@ title: zeusdata
 
 <ul class='index-posts'>
   {% for post in site.posts %}
-    <li>
+    <li class='index-post-li'>
       <a href="{{ post.url }}" class='post-title'>{{ post.title }}</a>
   
-  <span class="post-date">
+  <span class="post-date">Date: 
         {{ post.date | date: "%Y-%m-%d" }}
       </span>
     </li>
