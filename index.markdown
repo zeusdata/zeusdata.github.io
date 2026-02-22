@@ -10,19 +10,18 @@ title: zeusdata
 </head>
 <body>
 <article>
-<h4>Articles</h4>
-<ul >
-  {% for post in site.posts %}
-    <li class='post'>
-      <a href="{{ post.url }}" class='post_title'>{{ post.title }}</a>
-
-  <!-- 
-    {% for tag in post.tags %}
-      <span class="tag">{{ tag }}</span>
-    {% endfor %}
+<!-- 
+  {% for tag in post.tags %}
+    <span class="tag">{{ tag }}</span>
+  {% endfor %}
 -->
+
+<ul class='index-posts'>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}" class='post-title'>{{ post.title }}</a>
   
-  <span class="date">
+  <span class="post-date">
         {{ post.date | date: "%Y-%m-%d" }}
       </span>
     </li>
