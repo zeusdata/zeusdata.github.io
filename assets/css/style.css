@@ -17,6 +17,13 @@ body {
     max-width: 920px;
     width: 100%;
 }
+.search_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
 .search {
     width: 440px;
     height: 40px;

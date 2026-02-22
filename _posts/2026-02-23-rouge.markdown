@@ -1,0 +1,23 @@
+---
+layout: post
+title: "zeusdata.dev soon"
+date: 2026-02-22 10:00:00 +0200
+tags: 
+- javascript
+- test
+tags: [javascript, card, tracking, tromf, cruce]
+
+---
+
+UNDERCONSTRUCTION
+
+## SOOOOON
+
+
+{% highlight javascript %}
+function greet(name) {
+  console.log(`Hello ${name} :)`);
+}
+
+greet("Stranger");
+{% endhighlight %}

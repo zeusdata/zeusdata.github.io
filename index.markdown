@@ -9,6 +9,18 @@ title: zeusdata
 <head>
 </head>
 <body>
+<!-- 🔍 SEARCH BOX -->
+<div class="search_container">
+    <input
+        type="search"
+        id="search-input"
+        placeholder="Search posts..."
+        autocomplete="off"
+        class="search"
+    />
+
+    <ul id="search-results" class="search_results"></ul>
+</div>
 <article>
 <!-- 
   {% for tag in post.tags %}
