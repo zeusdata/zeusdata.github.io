@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Tranzy Data Fetcher</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-faq.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Tranzy JSON Data Fetcher" />
+    <meta
+      name="keywords"
+      content="tranzy, json, data, fetch, fetcher, zeusdata, api"
+    />
+    <meta name="author" content="Zeus Data" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav class="m-t-10">
+      <ul class="nav-links">
+        <li><a href="index.html">[index]</a></li>
+        <li>
+          <a href="https://github.com/zeusdata/" target="_blank">[github]</a>
+        </li>
+        <li><a href="faq.html">[faq]</a></li>
+        <li><a href="api-structure.html">[api-structure]</a></li>
+        <li><a href="mailto:zeusdata.dev@gmail.com">[contact]</a></li>
+      </ul>
+    </nav>
+
+    <p class="test m-t-10">TRANZY API [JSON] DATA FETCHER</p>
+
+    <div class="container">
+      <div class="faq-ui" id="api-key-ui">
+        <div class="faq-e-holder">
+          <p class="p-text-bold">What is this project for?</p>
+          <p class="p-text">
+            This project allows you to fetch public transport data (vehicles,
+            routes, trips, stops, etc.) and store it locally as JSON files for
+            analysis, debugging, or offline use.
+          </p>
+        </div>
+
+        <div class="faq-e-holder">
+          <p class="p-text-bold">What data source does it use?</p>
+          <p class="p-text">
+            The application uses data provided by Tranzy. The availability and
+            structure of the data depend on the selected agency.
+          </p>
+        </div>
+
+        <div class="faq-e-holder">
+          <p class="p-text-bold">Do I need an API key?</p>
+          <p class="p-text">
+            Yes, depending on your setup. You may need to configure an API key
+            before making requests.API Keys can be obtained by creating an
+            account on
+            <a href="https://tranzy.ai/" target="_blank">Tranzy</a>.
+          </p>
+        </div>
+
+        <div class="faq-e-holder">
+          <p class="p-text-bold">Why do I need to select an agency?</p>
+          <p class="p-text">
+            Each agency provides its own dataset. Selecting an agency ensures
+            the correct data is fetched.
+          </p>
+        </div>
+
+        <div class="faq-e-holder">
+          <p class="p-text-bold">
+            Why does nothing happen when I try to download?
+          </p>
+          <p class="p-text">
+            Make sure an agency is selected, the data has finished loading, and
+            there are no errors in the console.
+          </p>
+        </div>
+
+        <div class="faq-e-holder">
+          <p class="p-text-bold">Why are some files empty?</p>
+          <p class="p-text">
+            Some datasets may not be available for certain agencies or at
+            certain times.
+          </p>
+        </div>
+
+        <div class="faq-e-holder">
+          <p class="p-text-bold">Can I use this offline?</p>
+          <p class="p-text">
+            Yes, if the data is stored locally. Otherwise, an internet
+            connection is required to fetch new data.
+          </p>
+        </div>
+
+        <div class="faq-e-holder">
+          <p class="p-text-bold">Is this an official Tranzy tool?</p>
+          <p class="p-text">
+            No, this is a personal project built for learning and
+            experimentation.
+          </p>
+        </div>
+
+        <div class="faq-e-holder">
+          <p class="p-text-bold">What technologies are used?</p>
+          <p class="p-text">
+            The project is built using vanilla JavaScript, the Fetch API, DOM
+            manipulation, and JSON data handling.
+          </p>
+        </div>
+
+        <div class="faq-e-holder">
+          <p class="p-text-bold">Why was this project built?</p>
+          <p class="p-text">
+            The goal was to practice working with APIs, asynchronous data, and
+            structuring a frontend application without relying on frameworks.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="footer-text">
+        <a
+          href="https://github.com/zeusdata/tranzy-data-fetcher"
+          target="_blank"
+          >TranzyDataFetcher</a
+        >
+        v0.2.0 - <a href="CHANGELOG.md" target="_blank">CHANGELOG</a>. project
+        by
+        <a href="https://zeusdata.dev" target="_blank">ZEUSDATA.DEV</a>
+      </p>
+    </footer>
+    <script src="src/jszip/jszip.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

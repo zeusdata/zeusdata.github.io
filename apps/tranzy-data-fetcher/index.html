@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Tranzy Data Fetcher</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Tranzy JSON Data Fetcher" />
+    <meta
+      name="keywords"
+      content="tranzy, json, data, fetch, fetcher, zeusdata, api"
+    />
+    <meta name="author" content="Zeus Data" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav class="m-t-10">
+      <ul class="nav-links">
+        <li><a href="index.html">[index]</a></li>
+        <li>
+          <a href="https://github.com/zeusdata/" target="_blank">[github]</a>
+        </li>
+        <li><a href="faq.html">[faq]</a></li>
+        <li><a href="api-structure.html">[api-structure]</a></li>
+        <li><a href="mailto:zeusdata.dev@gmail.com">[contact]</a></li>
+      </ul>
+    </nav>
+
+    <p class="test m-t-10">TRANZY API [JSON] DATA FETCHER</p>
+
+    <div class="container">
+      <div class="api-key-ui" id="api-key-ui">
+        <div class="api-key-e-holder">
+          <p class="p-text">API_KEY FROM TRANZY.AI</p>
+          <input
+            type="password"
+            id="input-api-key"
+            placeholder="YOUR API_KEY HERE"
+          />
+          <div class="func-status">
+            <a class="p-text" id="check-api-key">CHECK API KEY()</a>
+            <p class="p-text-error" id="status-key"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="select-ui" id="select-ui">
+        <div class="select-e-holder">
+          <p class="p-text">SELECT AN AGENCY</p>
+          <select class="select-agency" id="select-agency">
+            <option>Choose an agency</option>
+          </select>
+          <div class="func-status">
+            <a class="p-text" id="generate-data"></a>
+            <p class="p-text-error" id="status-data"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="download-files-ui" id="download-files-ui">
+        <div class="download-files-e-holder">
+          <div class="func-status">
+            <p class="p-text">DOWNLOAD FILES</p>
+            <p class="p-text-error" id="status-download"></p>
+          </div>
+          <div class="e-r">
+            <div class="e-holder">
+              <ul>
+                <li class="p-text">FETCH VEHICLES</li>
+                <li class="p-text-json">JSON FILE</li>
+              </ul>
+              <a class="download" id="download-vehicles"
+                ><p class="p-download">DOWNLOAD</p></a
+              >
+            </div>
+          </div>
+
+          <div class="e">
+            <div class="e-holder">
+              <ul>
+                <li class="p-text">FETCH ROUTES</li>
+                <li class="p-text-json">JSON FILE</li>
+              </ul>
+              <a class="download" id="download-routes"
+                ><p class="p-download">DOWNLOAD</p></a
+              >
+            </div>
+          </div>
+
+          <div class="e">
+            <div class="e-holder">
+              <ul>
+                <li class="p-text">FETCH TRIPS</li>
+                <li class="p-text-json">JSON FILE</li>
+              </ul>
+              <a class="download" id="download-trips"
+                ><p class="p-download">DOWNLOAD</p></a
+              >
+            </div>
+          </div>
+
+          <div class="e">
+            <div class="e-holder">
+              <ul>
+                <li class="p-text">FETCH SHAPES</li>
+                <li class="p-text-json">JSON FILE</li>
+              </ul>
+              <a class="download" id="download-shapes"
+                ><p class="p-download">DOWNLOAD</p></a
+              >
+            </div>
+          </div>
+
+          <div class="e">
+            <div class="e-holder">
+              <ul>
+                <li class="p-text">FETCH STOPS</li>
+                <li class="p-text-json">JSON FILE</li>
+              </ul>
+              <a class="download" id="download-stops"
+                ><p class="p-download">DOWNLOAD</p></a
+              >
+            </div>
+          </div>
+
+          <div class="e-r">
+            <div class="e-holder">
+              <ul>
+                <li class="p-text">FETCH STOP TIMES</li>
+                <li class="p-text-json">JSON FILE</li>
+              </ul>
+              <a class="download" id="download-stop-times"
+                ><p class="p-download">DOWNLOAD</p></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="save-ui" id="save-ui">
+        <div class="save-e-holder">
+          <div class="func-status">
+            <p class="p-text">SAVE ALL FILES AS .ZIP</p>
+            <p class="p-text-error" id="status-zip"></p>
+          </div>
+          <a class="btn-save" id="btn-save">SAVE_ALL_FILES.ZIP</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="footer-text">
+        <a
+          href="https://github.com/zeusdata/tranzy-data-fetcher"
+          target="_blank"
+          >TranzyDataFetcher</a
+        >
+        v0.2.0 - <a href="CHANGELOG.md" target="_blank">CHANGELOG</a>. project
+        by
+        <a href="https://zeusdata.dev" target="_blank">ZEUSDATA.DEV</a>
+      </p>
+    </footer>
+    <script src="src/jszip/jszip.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
