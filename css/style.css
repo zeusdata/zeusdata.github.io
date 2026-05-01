@@ -214,3 +214,93 @@ footer {
 .white {
   color: White;
 }
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-rows: auto;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .tech-tools {
+    grid-template-columns: 1fr;
+  }
+
+  .h-text-first,
+  .h-text-second {
+    font-size: 36px;
+  }
+}
+.items-git,
+.email,
+.h-about,
+.tech,
+.questions-info {
+  padding: 40px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .menu,
+  .h-about,
+  .items,
+  .item-t,
+  footer {
+    padding: 20px;
+  }
+
+  .h-text-first,
+  .h-text-second {
+    font-size: 28px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  .items-git,
+  .email,
+  .h-about,
+  .tech,
+  .questions-info {
+    padding: 40px;
+  }
+  .tech-tools {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .links {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .a-github {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email {
+    font-size: 18px;
+    text-align: center;
+  }
+}
