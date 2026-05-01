@@ -1,0 +1,84 @@
+:root {
+  --background-color: #f8f7f3;
+  --dark-color: #1a1917;
+  --border-color: #ded5cf;
+  --cta-color: #ff4023;
+
+  --font-size: 14px;
+}
+::selection {
+  background-color: var(--cta-color);
+  color: var(--background-color);
+}
+* {
+  text-decoration: none;
+}
+@font-face {
+  font-family: "ESSE";
+  src: url("../assets/fonts/EncodeSansSemiExpanded-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ESSE";
+  src: url("../assets/fonts/EncodeSansSemiExpanded-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  font-family: "ESSE";
+  background-color: var(--background-color);
+}
+.grid {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1px;
+  border: 1px solid var(--border-color);
+  grid-template-rows: 80px 280px;
+  background: var(--border-color);
+}
+.menu,
+.h-about {
+  padding: 40px;
+  background-color: var(--background-color);
+  /* opacity: 0.3; */
+}
+.menu {
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: center;
+}
+a {
+  color: var(--cta-color);
+  font-family: "ESSE";
+  font-size: var(--font-size);
+  font-weight: 500;
+}
+.h-about {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.h-text-first {
+  color: var(--cta-color);
+  font-weight: 700;
+  font-size: 48px;
+}
+.h-text-second {
+  color: var(--dark-color);
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 600px 599px;
+  grid-auto-rows: 240px;
+  background: var(--border-color);
+  gap: 1px;
+}
+.items {
+  background-color: var(--background-color);
+}
