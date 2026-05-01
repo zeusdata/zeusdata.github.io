@@ -56,6 +56,10 @@ a {
   font-size: var(--font-size);
   font-weight: 500;
 }
+p {
+  font-size: 14px;
+  font-weight: 500;
+}
 .h-about {
   display: flex;
   flex-direction: column;
@@ -65,13 +69,17 @@ a {
   color: var(--cta-color);
   font-weight: 700;
   font-size: 48px;
+  font-display: swap;
 }
 .h-text-second {
   color: var(--dark-color);
   font-weight: 700;
   font-size: 48px;
+  font-display: swap;
 }
-
+.m-t-20 {
+  margin-top: 20px;
+}
 .projects {
   display: grid;
   grid-template-columns: 600px 599px;
@@ -81,4 +89,46 @@ a {
 }
 .items {
   background-color: var(--background-color);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.project-item-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+.project-item-tag {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--cta-color);
+}
+.project-item-description {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+.links {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  /* align-self: flex-end; */
+  /* border: 1px solid red; */
+}
+
+.items-git {
+  background-color: var(--dark-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease;
+}
+.items-git:hover {
+  background-color: var(--cta-color);
+}
+.a-github {
+  color: var(--border-color);
+  font-weight: 700;
+  font-size: 24px;
 }
