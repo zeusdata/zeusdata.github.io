@@ -57,10 +57,12 @@ a {
   font-weight: 500;
 }
 p {
+  font-family: "ESSE";
   font-size: 14px;
   font-weight: 500;
 }
 .h-about {
+  font-family: "ESSE";
   display: flex;
   flex-direction: column;
   gap: 10px;
