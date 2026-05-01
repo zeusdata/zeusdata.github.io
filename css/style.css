@@ -36,7 +36,7 @@ body {
   margin: 0 auto;
   gap: 1px;
   border: 1px solid var(--border-color);
-  grid-template-rows: 80px 280px;
+  grid-template-rows: 80px 280px auto 280px auto 280px 220px 280px 80px;
   background: var(--border-color);
 }
 .menu,
@@ -133,4 +133,84 @@ p {
   color: var(--border-color);
   font-weight: 700;
   font-size: 24px;
+}
+.tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+.tech-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* justify-content: center; */
+  align-items: center;
+}
+.tech-tools {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 540px 540px;
+  grid-auto-rows: 240px;
+  gap: 40px;
+  padding: 40px 0;
+  /* box-sizing: border-box; */
+  background-color: var(--background-color);
+}
+.item-t {
+  padding: 40px;
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.questions {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.questions-info {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  gap: 20px;
+  align-items: center;
+}
+.email {
+  font-family: "ESSE";
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--cta-color);
+}
+.q-input,
+.empty-space,
+footer {
+  background-color: var(--background-color);
+}
+.q-input {
+  background-color: var(--dark-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  /* gap:10px; */
+}
+footer {
+  padding: 40px;
+  /* box-sizing: border-box; */
+  background-color: var(--dark-color);
+  display: flex;
+  justify-content: space-between;
+}
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+.white {
+  color: White;
 }
