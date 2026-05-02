@@ -356,6 +356,6 @@ input[type="text"]:focus {
     max-width: 100%;
   }
   input[type="text"] {
-    width: 300px;
+    width: 270px;
   }
 }
