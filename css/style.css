@@ -355,4 +355,7 @@ input[type="text"]:focus {
   .grid {
     max-width: 100%;
   }
+  input[type="text"] {
+    width: 300px;
+  }
 }
